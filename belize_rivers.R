@@ -16,9 +16,12 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 belize <- readOGR(dsn = "BLZ_adm", layer = "BLZ_adm0")
 
 rivers_1 <- readOGR(dsn = "camerica", layer = "carivs")
+
 rivers_2 <- readOGR(dsn = "Belize_Rivers 2", layer = "Belize_Rivers")
 rivers_2_first_belize <- readOGR(dsn = "belize_rivers_2_first_crop", layer = "belizer_rivers_2_first_crop")
 rivers_2_second_belize <- readOGR(dsn = "belize_rivers_2_second_crop", layer = "belizer_rivers_2_second_crop")
+
+rivers_3 <- readOGR(dsn = "BLZ_wat", layer = "BLZ_water_lines_dcw")
 
 watersheds <- readOGR(dsn = "Belize_Watersheds", layer = "Belize_Watersheds")
 
@@ -70,6 +73,15 @@ plot(rivers_2_second_belize)
 plot(belize, add = TRUE)
 dev.off()
 
+
+# rivers 3 ----
+
+svg(filename = "img/svg/rivers_3.svg", width = 15, height = 20, onefile = TRUE)
+plot(rivers_3)
+plot(belize, add = TRUE)
+dev.off()
+
+
 # png outputs ----
 
 png(filename = "img/png/rivers_1_belize.png", width = 15, height = 20, units = "in", res = 300)
@@ -94,6 +106,11 @@ dev.off()
 
 png(filename = "img/png/rivers_2_second_belize.png", width = 15, height = 20, units = "in", res = 300)
 plot(rivers_2_second_belize)
+plot(belize, add = TRUE)
+dev.off()
+
+png(filename = "img/png/rivers_3.png", width = 15, height = 20, units = "in", res = 300)
+plot(rivers_3)
 plot(belize, add = TRUE)
 dev.off()
 

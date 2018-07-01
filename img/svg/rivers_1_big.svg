@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080pt" height="1440pt" viewBox="0 0 1080 1440" version="1.1">
-<g id="surface6">
-</g>
-</svg>
- <path d="M 59.039062 59.039062 L 1050 59.039062 L 1050 1367 L 59.039062 1367 Z M 59.039062 59.039062 "/>
+<defs>
+<clipPath id="clip1">
+  <path d="M 59.039062 59.039062 L 1050 59.039062 L 1050 1367 L 59.039062 1367 Z M 59.039062 59.039062 "/>
 </clipPath>
 <clipPath id="clip2">
   <path d="M 59.039062 59.039062 L 1050.757812 59.039062 L 1050.757812 1367 L 59.039062 1367 Z M 59.039062 59.039062 "/>
@@ -12,7 +11,7 @@
   <path d="M 324 106 L 1050.757812 106 L 1050.757812 1321 L 324 1321 Z M 324 106 "/>
 </clipPath>
 </defs>
-<g id="surface9">
+<g id="surface41">
 <rect x="0" y="0" width="1080" height="1440" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
 <g clip-path="url(#clip1)" clip-rule="nonzero">
 <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 59.039062 1366.558594 L 1049.757812 1366.558594 L 1049.757812 59.039062 L 59.039062 59.039062 Z M 59.039062 1366.558594 "/>
