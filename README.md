@@ -12,4 +12,4 @@ Playing with shapefiles from different sources of Belize's river network, to cre
 
 * `img/` contains lots of different renders of the shapefiles outlined above.
 
- 
+![](img/png/rivers_belize_1.png) 
